@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Basics</title>
+<link rel="stylesheet" href="/css/reactcss.css">
+</head>
+<body>
+  
+<h1>Notes of React Basics</h1>
+<ol>
+  <li>React intro  </li>
+  <li>
+    <ul>
+      <li>
+      react is not easy, so it will take some time. 
+    </li>
+    <li>react learning would be side effect while creating the smiley app</li>
+    <li>pick any  set from emojipedia and start creating the app</li>
+  </ul>
+  </li>
+  <li>Basic Concepts
+    <ul>
+      <li>declarative, component based, learn once and write anywhere what are these??</li>
+      <li>go to react.js website. Docs and Tutorial will have most of the concepts of react</li>
+      <li>react blog - for updates in the react. Read that</li>
+      <li>Community for podcasts, videos and to interact with other people</li>
+      <li>problem with the guide is that it starts with class while it needs to be covered in hooks</li>
+    </ul>
+  </li>
+  <li>Understand Concepts
+    <ul>
+      <li>declarative - earlier we have to take input and show output, now in reacct we can directly tell react and not tell program what to do! You dont need to put the DOM logic</li>
+      <li>compoennt based - react provides small components and you can re-use that component anywhere and it works just like that.</li>
+      <li>Learn once and write anywhere - react can be used for all platforms. New XBox app is in react native only!! ALl companies supports react.</li>
+    </ul>
+  </li>
+  <li>How to start react
+    <ul>
+      <li>Start with the react js website.</li>
+      <li>DOM - understand Vanilla js - and then use react class. </li>
+      <li>most people focus on react - syntaxx. You dont need to understand syntax. First understand the concept and then look for syntax anywhere</li>
+      <li>CodeSanbox will be used to create basic react.</li>
+      <li>Sandbox is just vscode online, even the commands are same, its easier to share here.</li>
+      <li>ReactDOM is only for browser, react native wont run on browser.</li>
+      <li>React takes the javascript and converts it into html to render on the website via the root element.</li>
+    </ul>
+  </li>
+  <li>JS Starts here
+    <ul>
+      <li>You can put javascript in the app.js</li>
+      <li>Normal html cant replace the keywords and do templating</li>
+      <li>But in Javascript you can easily declare variables</li>
+      <li>Instead of class in react you use - <span class="imp">classname </span>becuase class is a reserved keyword in JS</li>
+      <li>in JS you cant do hyphens inside the key. So instead you use camelcasing.</li>
+      <li>You can define variables inside the jsx and you can change color inside the app component only, earlier you have to use this in seperate CSS file, now you can do it on the components only.</li>
+      <li>Confusing - Classname and Style. THis has changed otherwise its like html only</li>
+      <li>HTML doesnt give error if variable is not defined, here you will get error!!</li>
+      <li>React DOM vs Browser DOM. React DOM converts DOM to make it understandable for the browser DOM</li>
+      <li class="imp">Styling error WAS NOT USING style={{!!!!!!! Color also C CAPITAL!! USE small}}</li>
+    </ul>
+    <li>Saurabh Sample codes
+      <ul>
+        <li>      <code>
+          <p>Emoji Mania</p>
+            <p>
+              Name of the user entering the website is :
+              <span style={{ backgroundColor: "red" }}>{UserNameFromPrompt}</span>
+            </code></li>
+      </ul>
+    </li>
+    <li> We dont need to add event listener when clicked
+      <ul>
+        <li>no need to add addClickEventListner();</li>
+        <li>Some Code 
+          <li><img style="border: 2rem;" src="image/n4og_i36pmg4-2021-09-23-17-36-26.png" alt=""></li>
+        </li>
+        <li>callback function automatic in react</li>
+        <li>always put link in the comments and not in the post because it decreases the reach of the posts</li>
+      </ul>
+    </li>
+  </li>
+
+  <li>2 types of writing console method
+    <ul>
+      <li><img src="image/n4og_i47pmg4-2021-09-23-17-47-51.png" alt=""></li>
+      <li><h3>dont forget to check the console</h3></li>
+      <li>2nd code example</li>
+      <li><img src="image/n4og_i18pmg4-2021-09-23-18-18-55.png" alt=""></li>
+      <li>Final Code to increase likes working perfectly</li>
+      <li><img src="image/n4og_i28pmg4-2021-09-23-18-28-06.png" alt=""></li>
+      <li>3rd step - real time updating the value in the test
+        <li>
+          <img src="image/n4og_i51pmg4-2021-09-23-18-51-56.png" alt="">
+        </li>
+      </li>
+      <li>Final Code after doing input and adding it in h3
+        <ul>
+          <li><img src="image/n4og_i18pmg4-2021-09-23-20-18-07.png" alt=""></li>
+        </ul>
+      </li>
+      <li>Code with showing shopping list and iterating the list
+        <ul>
+          <li><img src="image/n4og_i50pmg4-2021-09-23-20-50-40.png" alt=""></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Now update the view
+    <ul>
+      <li>Start view state.</li>
+      <li>time: 54 minutes</li>
+      <li>You have to call a function -  const[arrayLikeCounter, setLikeCounter] = useState(initalvalue)</li>
+      <li class="imp">none of the function in javascript returns 2 value, either it returns object or it returns array</li>
+      <li>Once you use const - you cant change the value later!!</li>
+      <li>add the value in the view. so create function - setlikeCounter();</li>
+    </ul>
+  </li>
+  <li>The Use State 
+    <ul>
+      <li>It gives 2 output and in an array. One is number of likes and other is function that will change state.</li>
+      <li>so onclick use the state function</li>
+      <li>this will automatically change the text in front of the button</li>
+      <li>Always think on the first view and last view, how will user react</li>
+    </ul>
+  </li>
+  <li>Learn the followings
+    <ul>
+      <li>Use State in React</li>
+      <li>declaring a funciton in react</li>
+      <li>VISER - YOu will render a view, interact with the view, update the state in event handler and once the state is updated you react to it.
+        V View, Interact, State, Event, React.
+      </li>
+      <li>Always think on the first view and last view, how will user react</li>
+      <li>learn the flow of a program inside react.</li>
+      <li>read about <span class="imp">key in object javascript </span>database</li>
+      <li>diff bw double == and ====?</li>
+      <li>read about objects access javascript. </li>
+      <li>its always input, processing, output</li>
+    </ul>
+  </li>
+  <li>Learnings 
+    <ul>
+      <li>When you have to code then you must be ready to write as many lines as possible. Because the more you write the easier you will be able to code. </li>
+      <li>benefit of react is that it can be done in less number of lines</li>
+    </ul>
+  </li>
+  <li ><h2 class="imp">ERRORS</h2>
+  <ol>
+    <li><h4>Input is void element with no children - this means that there should not be any spaces in the >< in this!!</h4>
+    <ul>
+      <li><img src="image/n4og_i42pmg4-2021-09-23-18-42-42.png" alt=""></li></li>
+      <li>error was
+        <li><img src="image/n4og_i43pmg4-2021-09-23-18-43-01.png" alt=""></li>
+      </li>
+    </ul>
+    <li><h4>The error was because I was using "" but {} needed to be used!!!!!! Error which I got was!!</h4>
+      <ul>
+        <li><img src="image/n4og_i41pmg4-2021-09-23-18-41-03.png" alt=""></li>
+        <li><img src="image/n4og_i41pmg4-2021-09-23-18-41-47.png" alt=""></li>
+      </ul>
+    </li>
+    <li>Each child must have unique key??
+      <ul>
+        <li><img src="image/n4og_i44pmg4-2021-09-23-20-44-43.png" alt=""></li>
+        <li>solution lies in the fact that all the elements inside the iterating list must have a "key" in that way it is easy for the react to go with DOM changes.</li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+</ol>
+
+</body>
+</html>
